@@ -1,13 +1,19 @@
 package com.stackroute.domain;
 
 public class Movie {
-    private Actor actor;
 
-    public Movie(Actor actor) {
-        this.actor = actor;
+    private Actor actorbean1;
+    public Movie() {
+    }
+    public Movie(Actor actorbean1) {
+        this.actorbean1 = actorbean1;
+    }
+
+    public void setActorbean1(Actor actorbean1) {
+        this.actorbean1 = actorbean1;
     }
 
     public void display(){
-        System.out.println(this.actor.getName()+","+this.actor.getGender()+","+this.actor.getAge());
+        System.out.println(this.actorbean1.getName()+","+this.actorbean1.getGender()+","+this.actorbean1.getAge());
     }
 }
