@@ -21,13 +21,6 @@ public class Main
         Movie movie2=beanfactory.getBean("moviebean",Movie.class);
         System.out.println("using bean factory");
         movie2.display();
-//        using BeanRegistry and BeanReader
-//        DefaultListableBeanFactory registry=new DefaultListableBeanFactory(); //implements bean definition registry interface
-//        GenericBeanDefinition beandefinition=new GenericBeanDefinition();
-//        beandefinition.setBeanClass(Movie.class);
-//        registry.registerBeanDefinition("moviebean",beandefinition);
-//        XmlBeanDefinitionReader reader=new XmlBeanDefinitionReader(registry); //implements bean definition reader
-//        reader.loadBeanDefinitions(new ClassPathResource("beans.xml"));
         
 
 
