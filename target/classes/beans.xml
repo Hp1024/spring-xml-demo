@@ -2,21 +2,6 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="actorbean1" class="com.stackroute.domain.Actor">
-        <constructor-arg value="Haripriya" type="java.lang.String"></constructor-arg>
-        <constructor-arg value="Female" name="gender"></constructor-arg>
-        <constructor-arg value="21" index="2"></constructor-arg>
-    </bean>
-    <bean id="actorbean2" class="com.stackroute.domain.Actor" >
-        <constructor-arg value="Shivani" type="java.lang.String"></constructor-arg>
-        <constructor-arg value="Female" name="gender"></constructor-arg>
-        <constructor-arg value="21" index="2" ></constructor-arg>
-    </bean>
-    <bean id="actorbean3" class="com.stackroute.domain.Actor">
-        <constructor-arg value="Poorvi" type="java.lang.String"></constructor-arg>
-        <constructor-arg value="Female" name="gender"></constructor-arg>
-        <constructor-arg value="21" index="2"></constructor-arg>
-    </bean>
-    <bean id="moviebean"  class="com.stackroute.domain.Movie">
-    </bean>
+    <bean id="postprocessorbean" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>
+    <bean id="lifecycledemobean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"></bean>
 </beans>
